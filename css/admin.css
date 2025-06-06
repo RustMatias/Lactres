@@ -1,0 +1,880 @@
+.btn-admin-up {
+    background-color: #f8f9fa !important;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.btn-admin-up:hover {
+    background-color: #e2e6ea !important;
+}
+
+.btn-text {
+    margin: 0px;
+    
+    margin-left: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .btn-admin-up {
+        width: 100%; /* Make buttons full width on smaller screens */
+        margin-right: 0;
+        margin-bottom: 1rem; /* Add more space between buttons */
+        padding: 0.75rem 1rem;
+    }
+    
+    .d-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn-text {
+        text-align: center; /* Center the text on smaller screens */
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-admin-up {
+        padding: 1rem; /* Increase padding for smaller screens */
+        font-size: 1rem;
+    }
+    
+    .btn-text {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hideform{
+    display: none !important;
+}
+
+.formadmin {
+
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formadmin h2 {
+    
+    color: #333;
+ 
+}
+
+.formadmin .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formadmin .form-column {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.formadmin .form-column:last-child {
+    margin-right: 0;
+}
+
+.formadmin .form-group {
+    font-size: 14px !important;
+    margin-bottom: 20px;
+}
+
+.formadmin .form-group label {
+    font-size: 14px !important;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formadmin .form-group input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.formadmin .form-group input[type="file"] {
+    border: none;
+}
+
+.formadmin button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.formadmin button:hover {
+    background-color: #444;
+}
+
+
+.subnav{
+    width: 100%;
+    color: rgb(141, 141, 141);
+  
+    
+}
+
+.subnav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subnav li{
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid  rgb(141, 141, 141);
+    margin: 0.5rem;
+    padding: 0.2rem 0.75rem ;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.item-nav-header{
+    color: #8c8c8c;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid  rgb(141, 141, 141);
+    margin: 0.5rem;
+    padding: 0.2rem 0.75rem ;
+    cursor: pointer;
+    text-decoration: none;
+  
+}
+.item-nav-header:hover{
+    color: #fefefe;
+    background-color:   rgb(141, 141, 141);
+    text-decoration: none;
+}
+
+.subnav li:hover{
+    color: #fefefe;
+    background-color:   rgb(141, 141, 141);
+
+}
+
+
+/* EDITAR PRODUCT */
+.EditProduct-result-item {
+    width: 100%;
+    margin-top: 1rem;
+    color: #333;
+    overflow: hidden;
+    max-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.EditProduct-result-item:hover {
+    background-color: #c6c6c670;
+    color: #333;
+    text-decoration: none;
+}
+
+.EditProduct-img-container {
+    width: 15%;
+    max-height: 5rem;
+    overflow: hidden;
+}
+
+.EditProduct-thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.EditProduct-info {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 85%;
+}
+
+.EditProduct-info h3 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.EditProduct-description {
+    font-size: 14px;
+    color: #757575;
+    margin: 5px 0;
+}
+
+.EditProduct-details {
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.EditProduct-details span {
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+.imagenProfile{
+    width: 160px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius:50%;
+    margin-bottom: 20px;
+}
+
+.profile{
+    min-width: 20%;
+    max-width: 20%;
+    background-color: #f7f9fa;
+    color: #757575;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-empresarial {
+    background-color: #f8f9fa; /* Gris muy claro */
+    color: #495057; /* Gris oscuro para el texto */
+    border: 1px solid #ced4da; /* Borde para definir mejor el botón sobre fondo blanco */
+}
+
+.btn-empresarial:hover, .btn-empresarial:focus {
+    background-color: #e2e6ea; /* Gris claro al hacer hover */
+    color: #212529; /* Gris casi negro para mejorar el contraste al hacer hover */
+}
+
+.btn-empresarial:hover  i{
+   color: #3859ff;
+}
+
+
+
+
+.btn-empresarial {
+    position: relative; /* Necesario para posicionar el texto de manera absoluta */
+    overflow: visible; /* Asegura que el texto no se corte */
+}
+
+.btn-empresarial .btn-text {
+    position: absolute;
+    white-space: nowrap; /* Evita que el texto se envuelva */
+    display: none;
+    left: 100%; /* Coloca el texto justo después del botón */
+    top: 50%; /* Centra verticalmente el texto respecto al botón */
+    transform: translateY(-50%) translateX(10px); /* Ajusta la posición vertical y añade espacio desde el ícono */
+    background: rgba(0, 0, 0, 0.75); /* Fondo oscuro para la etiqueta */
+    color: white;
+    padding: 5px 10px; /* Espaciado interno de la etiqueta */
+    border-radius: 4px; /* Bordes redondeados para la etiqueta */
+    z-index: 1000; /* Asegura que el texto esté sobre otros elementos */
+}
+
+.btn-empresarial:hover .btn-text {
+    display: block; /* Muestra el texto al hacer hover */
+    animation: slide-in 0.3s ease-out forwards; /* Anima el texto para que 'slide in' */
+}
+
+@keyframes slide-in {
+    from { transform: translateY(-50%) translateX(10px); opacity: 0; }
+    to { transform: translateY(-50%) translateX(0); opacity: 1; }
+}
+
+
+
+/* Estilos del botón hamburguesa */
+.btn-hamburguesa {
+    background-color: #3859ff;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2000;
+    border-radius: 5px;
+}
+
+/* Ocultar el menú en móviles */
+.menu-lateral {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mostrar el menú cuando se active */
+.menu-lateral.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mostrar siempre el menú en pantallas grandes */
+@media (min-width: 768px) {
+    .btn-hamburguesa {
+        display: none;
+    }
+    
+    .menu-lateral {
+        display: flex !important;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+.aside-admin{
+    padding-top: 1rem;
+    border-radius: 5px;
+    background-color: #f7f9fa;
+}
+
+
+
+
+/* BANNERS */
+.banner-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.banner-col {
+    flex: 1;
+    min-width: 250px;
+    max-width: calc(33.333% - 20px);
+}
+
+.banner-card {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.banner-card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.banner-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.banner-card-title {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.banner-card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.banner-card-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.banner-card-action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-delete-button svg {
+    stroke: #ff0000;
+}
+
+.banner-edit-button svg {
+    stroke: #0000ff;
+}
+
+.banner-submit-button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.banner-submit-button:hover {
+    background-color: #444;
+    border-color: #444;
+}
+
+.banner-form-group {
+    margin-bottom: 15px;
+}
+
+.banner-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.banner-form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+
+/* ADMIN PEDIDOS */
+.ap-order-table {
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ap-order-table th, .ap-order-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+.ap-order-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    height: min-content;
+}
+
+
+.ap-order-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.ap-order-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.ap-manage-button {
+    background-color: #2062e7;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.ap-manage-button:hover {
+    text-decoration: none;
+    background-color: #1e5bd6;
+    color: white;
+
+}
+
+.ap-filters {
+    margin-bottom: 20px;
+}
+
+.ap-input, .ap-select, .ap-button {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ap-button {
+    background-color: #2062e7;
+    color: white;
+    cursor: pointer;
+}
+
+.ap-button:hover {
+    background-color: #1d58cf;
+}
+
+.ap-stats-container {
+    display: flex;
+    flex-wrap: wrap; /* Para permitir el ajuste en múltiples líneas si es necesario */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    gap: 1rem; /* Espacio entre los elementos */
+}
+
+.ap-stat-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em; /* Tamaño pequeño del texto */
+    color: #666; /* Color discreto */
+    text-transform: lowercase; /* Texto en minúsculas */
+}
+
+.ap-stat-item svg {
+    width: 15px; /* Tamaño del ícono */
+    height: 15px;
+    margin-right: 0.5rem; /* Espacio entre el ícono y el texto */
+}
+
+
+.ap-btn-admin-up {
+    margin: 0px;
+    background-color: #f8f9fa !important;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.ap-btn-admin-up small{
+    margin: 0px;
+
+}
+
+/* Paginador */
+.ap-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* GESTIONAR PEDIDOS */
+.gp-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.gp-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.gp-table {
+    font-size: 12px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.gp-table th, .gp-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.gp-table th {
+    background-color: #f2f2f2;
+}
+.gp-form-group {
+    margin-bottom: 15px;
+}
+.gp-form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.gp-form-group select, .gp-form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.gp-form-group button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.gp-form-group button:hover {
+    background-color: #45a049;
+}
+.gp-product-image {
+    max-width: 150px; /* Set the width of the thumbnail */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* admin stock*/
+.astock-tbody{
+    font-size: 14px;
+}
+
+.astock-tbody img{
+    width:150px; 
+    height:70px;
+    object-fit: cover;
+}
+
+/* General */
+form.form-as-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 1rem;
+
+
+   
+}
+
+.form-as-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+}
+
+label.form-as-label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+input.form-as-input, select.form-as-select {
+    padding: 0.4rem;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+    outline: none;
+    background-color: #fff;
+}
+
+input.form-as-input:focus, select.form-as-select:focus {
+    border-color: #007bff;
+}
+
+button.form-as-button {
+    padding: 0.6rem 1rem;
+    background-color: #303198;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button.form-as-button:hover {
+    background-color: rgb(0, 90, 186);
+}
+
+.as-action-button{
+    margin: 0.2rem;
+    padding: 0.2rem 1rem;
+    background-color: #303198;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.as-action-button:hover{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+/* Flex behavior for better spacing */
+@media (max-width: 768px) {
+    form.form-as-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-as-group {
+        min-width: 100%;
+    }
+
+    button.form-as-button {
+        width: 100%;
+    }
+
+
+    .aside-admin{
+        margin-bottom: 0.5rem;
+    }
+    
+.fixed-container {
+    width: 1200px; /* Ajusta esto según el tamaño que prefieras */
+    margin: 0 auto; /* Centra el contenedor */
+    overflow: hidden; /* Evita desbordamientos */
+}
+    
+}
+
+
+.desktop-admin-menu {
+    display: block !important; /* Visible por defecto en escritorio */
+    
+}
+
+.mobile-admin-menu {
+    display: none  !important;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    color: #ffffff;
+}
+
+.mobile-admin-menu *{
+
+    color: #ffffff;
+}
+
+.headerpageadmin{
+    display: flex;
+    justify-content: center;
+}
+/* Cuando el ancho de la pantalla sea menor a 768px (dispositivos móviles) */
+@media (max-width: 768px) {
+    .desktop-admin-menu {
+        display: none  !important; /* Oculta en mobile */
+    }
+    
+    .mobile-admin-menu {
+        display: block  !important; /* Muestra en mobile */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .admin_table_pedidos thead th:nth-child(1), /* Imagen */
+    .admin_table_pedidos thead th:nth-child(3), /* Marca */
+    .admin_table_pedidos thead th:nth-child(4), /* Descripción */
+    .admin_table_pedidos thead th:nth-child(5), /* Precio */
+    .admin_table_pedidos thead th:nth-child(6), /* Stock */
+    .admin_table_pedidos thead th:nth-child(7), /* Fabricante */
+    .admin_table_pedidos tbody td:nth-child(1),
+    .admin_table_pedidos tbody td:nth-child(3),
+    .admin_table_pedidos tbody td:nth-child(4),
+    .admin_table_pedidos tbody td:nth-child(5),
+    .admin_table_pedidos tbody td:nth-child(6),
+    .admin_table_pedidos tbody td:nth-child(7) {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .ap-order-table thead th:nth-child(1), /* Código de Compra */
+    .ap-order-table thead th:nth-child(2), /* Fecha */
+    .ap-order-table thead th:nth-child(3), /* Estado */
+    .ap-order-table thead th:nth-child(4), /* Cantidad de Productos */
+    .ap-order-table tbody td:nth-child(1),
+    .ap-order-table tbody td:nth-child(2),
+    .ap-order-table tbody td:nth-child(3),
+    .ap-order-table tbody td:nth-child(4) {
+        display: none;
+
+        max-width: 100%;
+    }
+
+
+    .ap-select{
+        width: 100%;
+    }
+
+    .tableinfoproducts-gestionarpedido{
+        width: 100%; /* La tabla ocupará el 100% del ancho del contenedor */
+        table-layout: fixed; /* Hace que las celdas se ajusten uniformemente dentro de la tabla */
+        box-sizing: border-box;
+    }
+}
+
+
+.img-logo-cntrol-panel{
+    max-width: 300px;
+}

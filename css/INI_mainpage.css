@@ -1,0 +1,370 @@
+
+/* ----- NAVEGACIÓN ----- */
+.ini_mainpage_nav-bar {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.ini_mainpage_nav-bar a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+/* ----- PRODUCTOS ----- */
+.ini_mainpage_productos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Escritorios: 3 productos por fila */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+/* Ajuste para tablets (2 productos por fila) */
+@media (max-width: 1024px) {
+  .ini_mainpage_productos {
+    grid-template-columns: repeat(2, minmax(250px, 1fr)); /* 2 columnas en tablets */
+  }
+}
+
+/* Ajuste para celulares (1 producto por fila y centrado) */
+@media (max-width: 768px) {
+  .ini_mainpage_productos {
+    grid-template-columns: 1fr; /* Celulares: 1 columna */
+    justify-content: center;
+    place-items: center; /* Centrar los productos */
+  }
+}
+
+
+
+.ini_mainpage_producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  max-width: fit-content;
+  padding: 10px;
+}
+
+
+
+
+.ini-mainpage-price-product{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ini-mainpage-name-product{
+  margin: 0px;
+  margin-top: 1rem;
+}
+
+.ini_mainpage_producto img {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ini_mainpage_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.ini_mainpage_main {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@media (min-width: 768px) { /* Para escritorio */
+  .ini_mainpage_main {
+    margin-top: 10rem;
+
+  }
+
+}
+
+
+/* ----- TEXTO Y ENLACES ----- */
+.ini_mainpage_p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.ini_mainpage_a {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ini_mainpage_a.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* ----- BADGES ----- */
+.ini_mainpage_badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.ini_mainpage_badge.descuento {
+  background: orange;
+}
+
+.ini_mainpage_precio-descuento {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* ----- MODAL ----- */
+.ini_mainpage_modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1030;
+}
+
+.ini_mainpage_modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  color: black;
+    z-index: 1030;
+}
+
+.ini_mainpage_modal-content img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.ini_mainpage_close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* Fondo oscuro cuando el modal está activo */
+.ini_mainpage_modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del contenido del modal */
+.ini_mainpage_modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Botón de cierre */
+.ini_mainpage_modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Contenedor del producto dentro del modal */
+.ini_mainpage_modal-product-container {
+  display: flex;
+}
+
+/* Imagen del producto */
+.ini_mainpage_modal-product-image {
+  position: relative;
+  flex: 1;
+}
+
+.ini_mainpage_modal-product-image img {
+
+  min-height:  100%;
+  
+}
+
+.ini_mainpage_modal-product-overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Detalles del producto */
+.ini_mainpage_modal-product-details {
+  text-align: start;
+  flex: 1;
+  padding: 20px;
+}
+
+.ini_mainpage_modal-product-title {
+  font-size: 2rem;
+}
+
+.ini_mainpage_modal-product-price {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.ini_mainpage_modal-product-installments {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Selector de cantidad */
+.ini_mainpage_modal-quantity-selector {
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.ini_mainpage_modal-btn {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 40px;
+  text-align: center;
+
+}
+
+
+
+
+.ini_mainpage_modal-quantity-input {
+  width: 50px;
+  text-align: center;
+  border: none;
+  color: rgb(0, 0, 0);
+  margin: 0 5px;
+}
+
+/* Botón Agregar al carrito */
+
+
+/* Descripción del producto */
+.ini_mainpage_modal-product-description {
+  padding: 0px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #767676;
+  list-style: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ini_mainpage_modal-product-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .ini_mainpage_modal-product-overlay {
+      font-size: 2rem;
+  }
+
+  .ini_mainpage_modal-quantity-selector {
+      justify-content: center;
+  }
+
+  .ini_mainpage_modal-add-to-cart {
+      width: auto;
+  }
+
+  .ini_mainpage_modal-product-title {
+  font-size: 1.2rem;
+}
+
+.ini_mainpage_modal-product-price {
+  font-size: 0.7rem;
+
+}
+}
+
+
+.ini_mainpage_modal_agrupacion_botones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ini_mainpage_modal-close-mobile {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000000;
+  background: white;
+  z-index: 100;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .ini_mainpage_modal-close-mobile {
+      display: flex;
+  }
+}

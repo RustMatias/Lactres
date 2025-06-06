@@ -1,0 +1,405 @@
+.ap-features-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    gap: 10px;
+}
+
+.ap-feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 calc(50% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 150px;
+}
+
+.ap-feature-icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.ap-feature-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.ap-feature-link {
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.ap-feature-link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .ap-feature-item {
+        flex: 1;
+        border-right: 1px solid #ddd;
+    }
+
+    .ap-feature-item:last-child {
+        border-right: none;
+    }
+}
+
+.home-emprendedores img{
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    max-width: 100%;
+}
+
+.emprendedores-comunicar {
+  padding: 1rem;
+  min-width: 100%;
+  background-color: #303198;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  max-width: 100%;
+  color: #f1f1ff;
+}
+
+
+.home-header {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    border-bottom: 2px solid #555;
+  }
+  
+  /* Contenedor principal con diseño en columnas */
+  .home-plantilla {
+    border-radius: 0.5rem;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    background: rgb(255,255,255);
+    }
+  
+  /* Estilos para la columna izquierda (información) */
+  .home-info {
+    flex: 1 1 45%;
+    padding: 1.5rem;
+  
+ 
+    border-radius: 5px;
+  }
+  
+  /* Estilos para la columna derecha (foto) */
+  .home-photo {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .home-photo img {
+    max-width:70%;
+    height: auto;
+    border-radius: 5px;
+    aspect-ratio: 16 / 9;
+  }
+  
+  /* Responsive: Ajustar diseño para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .home-info,
+    .home-photo {
+      flex: 1 1 100%;
+    }
+  }
+
+  /* Tabla */
+.home-offlog-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Espaciado solo entre filas */
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: #fff;
+}
+
+/* Encabezado */
+.home-offlog-table-header {
+  background-color: #f4f4f4;
+}
+
+.home-offlog-table-heading {
+  padding: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Cuerpo */
+.home-offlog-table-body .home-offlog-table-row {
+  background-color: #fff;
+}
+
+.home-offlog-table-body .home-offlog-table-row:not(:last-child) {
+  border-bottom: 1px solid #ddd; /* Separación solo en la parte inferior */
+}
+
+.home-offlog-table-cell {
+  white-space: nowrap;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+}
+
+.home-offlog-table-cell-right{
+  text-align: right;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+  .home-offlog-mobile-templates{
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .home-offlog-image-container {
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .home-offlog-image-container img {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    transform-origin: center;
+  }
+  
+  .home-offlog-rotate-left {
+    border-radius: 1rem;
+    transform: rotate(-45deg);
+  }
+  
+  .home-offlog-centered {
+    border-radius: 1rem;
+    transform: rotate(0);
+  }
+  
+  .home-offlog-rotate-mid-left {
+    border-radius: 1rem;
+    transform: rotate(-25deg);
+  }
+  
+
+
+
+
+
+
+  .home-offlog-description-box {
+    font-family: 'Roboto', Arial, sans-serif; /* Fuente moderna y fácil de leer */
+    color: #333; /* Color de texto oscuro para buen contraste */
+    padding: 20px;
+    border-radius: 12px; /* Esquinas redondeadas para suavidad */
+    max-width: 400px; /* Limita el ancho para facilitar lectura */
+  }
+  
+  .home-offlog-title {
+    font-size: 1.8em; /* Título prominente */
+    color: #222; /* Color ligeramente más oscuro */
+    margin-bottom: 15px; /* Espacio para separar del contenido */
+    text-align: center; /* Centra el título para énfasis */
+    padding-bottom: 10px;
+  }
+  
+  .home-offlog-list {
+    list-style: none; /* Sin viñetas para un diseño más limpio */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .home-offlog-list-item {
+    font-size: 1.1em; /* Tamaño de texto cómodo */
+    line-height: 1.6; /* Espaciado entre líneas para legibilidad */
+    margin: 10px 0; /* Separación entre ítems */
+    padding: 10px;
+    border-left: 4px solid #6C63FF; /* Línea de énfasis */
+    transition: transform 0.3s, background-color 0.3s; /* Animaciones suaves */
+    cursor: pointer; /* Indica interactividad */
+  }
+  
+  .home-offlog-list-item:hover {
+    transform: translateX(5px); /* Pequeño movimiento para atraer atención */
+    background-color: #f1f1ff; /* Fondo ligeramente más destacado */
+  }
+  
+
+
+  .home-offlog-calltoaccion{
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home-offlog-calltoaccion img{
+    width: 45%;
+    border-radius: 0.5rem;
+  }
+
+
+  @media (max-width: 768px) {
+    .home-offlog-mobile-templates{
+      margin: 2rem 0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+
+    .home-offlog-image-container {
+
+      justify-content: flex-end;
+    }
+
+    .home-plantilla {
+      border-radius: 0.5rem;
+      display: flex;
+      margin-top: 1rem;
+      justify-content: space-between;
+      background: rgb(255,255,255);
+      flex-direction: column;
+      }
+  
+      .home-offlog-table-cell {
+        white-space: wrap;
+
+      }
+      .home-offlog-calltoaccion{
+    
+
+        display: none;
+     
+      }
+  }
+
+  @media (max-width: 480px) {
+   
+    .home-offlog-image-container img {
+      width: 25%; /* Ajusta el tamaño según sea necesario */
+      height: auto;
+      transform-origin: center;
+    }
+  
+  }
+
+  .emprendedores-banner{
+    max-width: 100%;
+}
+
+.coverimg-mobile {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+  height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+  object-fit: cover; /* Escala la imagen para cubrir el contenedor */
+  object-position: center; /* Centra la imagen */
+}
+
+
+   
+    .steps-container {
+      margin-top: 2rem !important;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .steps-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 28px;
+      width: 4px;
+      height: 100%;
+      background: #313399;
+    }
+
+    .step {
+      position: relative;
+      margin-left: 60px;
+      margin-bottom: 2rem;
+      background: #fff;
+      padding: 1.2rem 1rem 1.2rem 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .step::before {
+      content: attr(data-step);
+      position: absolute;
+      top: 1.2rem;
+      left: -42px;
+      width: 32px;
+      height: 32px;
+      background: #313399;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 0 0 4px #f8f9fa;
+    }
+
+    .step h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .step p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .steps-container::before {
+        left: 20px;
+      }
+      .step {
+        margin-left: 50px;
+        padding-left: 1rem;
+      }
+      .step::before {
+        left: -36px;
+      }
+    }

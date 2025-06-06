@@ -1,0 +1,160 @@
+
+/* Overlay */
+.dashboard-connectivities-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Modal */
+.dashboard-connectivities-modal {
+  background: #fff;
+  width: 95%;
+  max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Header */
+.dashboard-connectivities-modal-header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-connectivities-btn-close {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Body */
+.dashboard-connectivities-modal-body {
+  padding: 20px;
+}
+
+.dashboard-connectivities-form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-connectivities-form-group label {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.dashboard-connectivities-form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.dashboard-connectivities-form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Checkbox */
+.dashboard-connectivities-form-check {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Footer */
+.dashboard-connectivities-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.dashboard-connectivities-btn-cancel,
+.dashboard-connectivities-btn-confirm {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboard-connectivities-btn-cancel {
+  background-color: #ccc;
+}
+
+.dashboard-connectivities-btn-confirm {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Botón abrir modal */
+.dashboard-connectivities-btn-open-modal {
+  padding: 12px 20px;
+  background-color: #313399;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; /* ← Alineación vertical */
+  gap: 10px; /* Espacio entre imagen y texto */
+  transition: 0.2s;
+}
+
+.dashboard-connectivities-btn-open-modal span {
+  height: fit-content;
+}
+
+.dashboard-connectivities-logo {
+  height: 100px; /* Ajusta el tamaño de la imagen según necesidad */
+  width: auto;
+}
+
+
+.dashboard-connectivities-btn-open-modal:hover {
+  background-color: #41439a;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+
+.dashboard-connectivities-bdx{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(214, 227, 248);
+  padding: 0.5rem;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+  text-align: center;
+}
+
+
+.dashboard-profile-bdx-logo{
+  width: 100px;
+}

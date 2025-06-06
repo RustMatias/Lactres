@@ -1,0 +1,133 @@
+.content {
+  display: flex;
+
+}
+
+
+.content-stats{
+  background: #f6f7fb;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+
+/* CONTENEDORES Y TEXTO */
+.dashboard-shipping-alert {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  color: #856404;
+  font-size: 0.95rem;
+}
+
+.dashboard-shipping-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-shipping-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard-shipping-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.dashboard-shipping-checkbox-label {
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dashboard-shipping-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.dashboard-shipping-input:focus {
+  outline: none;
+  border-color: #1a73e8;
+}
+
+.dashboard-shipping-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dashboard-shipping-table th,
+.dashboard-shipping-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.dashboard-shipping-table-head th {
+  background-color: #1a73e8;
+  color: white;
+  font-weight: 600;
+}
+
+.dashboard-shipping-btn {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dashboard-shipping-btn-danger {
+  background-color: #da707b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.dashboard-shipping-btn-danger:hover {
+  background-color: #ea616e;
+
+}
+
+.dashboard-shipping-btn-add {
+  background-color: #28a745;
+  color: white;
+  margin-top: 1rem;
+}
+
+.dashboard-shipping-btn-add:hover {
+  background-color: #218838;
+}
+
+.dashboard-shipping-btn-save {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: rgb(187, 248, 150);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+  transition: 0.2s;
+}
+
+
+.dashboard-shipping-table input[type="number"] {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}

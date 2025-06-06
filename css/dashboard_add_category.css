@@ -1,0 +1,87 @@
+.content {
+    display: flex;
+  
+  }
+  
+  
+  .content-stats{
+    background: #f6f7fb;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+  }
+
+
+  input[type="text"],
+  input[type="number"],
+  input[type="file"],
+  select {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .dashboard-add-category-form {
+    
+    margin: 0 auto;
+
+
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .dashboard-add-category-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .dashboard-add-category-group {
+    margin-bottom: 18px;
+  }
+  
+  .dashboard-add-category-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .dashboard-add-category-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fefefe;
+    transition: border-color 0.3s;
+  }
+  
+  .dashboard-add-category-input:focus {
+    border-color: #a27dfc;
+    outline: none;
+  }
+  
+  .dashboard-add-category-file {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+  
+
+  .btn-enviar {
+    padding: 0.75rem;
+    background-color: rgb(187, 248, 150);
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+  }

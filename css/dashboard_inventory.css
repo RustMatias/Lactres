@@ -1,0 +1,298 @@
+.content {
+    display: flex;
+  
+  }
+  
+  
+  .content-stats{
+    background: #f6f7fb;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+  }
+
+
+  /* FORMULARIO */
+.dashboard-inventory-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color:rgb(214, 227, 248);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .dashboard-inventory-form-group {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dashboard-inventory-form-label {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    color: #333;
+  }
+  
+  .dashboard-inventory-form-input,
+  .dashboard-inventory-form-select {
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .dashboard-inventory-form-button {
+    padding: 10px 16px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: auto;
+  }
+  
+  .dashboard-inventory-form-button:hover {
+    background-color: #34495e;
+  }
+  
+  /* TABLA */
+  .dashboard-inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .dashboard-inventory-table th,
+  .dashboard-inventory-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+  }
+  
+  .dashboard-inventory-table th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .dashboard-inventory-table img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* BOTONES */
+  .dashboard-inventory-action-button {
+    background-color: #2980b9;
+    color: white;
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .dashboard-inventory-action-button:hover {
+    background-color: #3498db;
+  }
+  
+  /* MODAL */
+  .dashboard-inventory-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dashboard-inventory-modal-overlay.active {
+    display: flex;
+  }
+  
+  .dashboard-inventory-modal-content {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  .dashboard-inventory-modal-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .dashboard-inventory-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .dashboard-inventory-btn-cancel,
+  .dashboard-inventory-btn-delete {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .dashboard-inventory-btn-cancel {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .dashboard-inventory-btn-delete {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .dashboard-inventory-btn-cancel:hover {
+    background-color: #bbb;
+  }
+  
+  .dashboard-inventory-btn-delete:hover {
+    background-color: #c0392b;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .dashboard-inventory-table thead {
+      display: none;
+    }
+  
+    .dashboard-inventory-table tr {
+      display: block;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 10px;
+      background-color: white;
+    }
+  
+    .dashboard-inventory-table td {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      font-size: 0.9rem;
+      border: none;
+    }
+  
+    .dashboard-inventory-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #555;
+      flex-basis: 50%;
+    }
+  
+    .dashboard-inventory-form {
+      flex-direction: column;
+    }
+  
+    .dashboard-inventory-form-button {
+      width: 100%;
+    }
+  }
+  
+
+
+
+  .dashboard-inventory-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .dashboard-inventory-pagination .pagination {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dashboard-inventory-pagination .page-item {
+    display: inline;
+  }
+  
+  .dashboard-inventory-pagination .page-link {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .dashboard-inventory-pagination .page-link:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dashboard-inventory-pagination .page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .dashboard-inventory-pagination .page-item.disabled .page-link {
+    pointer-events: none;
+    color: #999;
+    background-color: #f8f8f8;
+    border-color: #ddd;
+  }
+  @media (max-width: 480px) {
+    .dashboard-inventory-pagination .page-link {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+  }
+  
+
+
+  .dashboard-inventory-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .dashboard-inventory-header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 248, 150);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    stroke: rgb(0, 0, 0);
+  }
+
+  .dashboard-inventory-header a svg{
+    margin-right: 0.5rem;
+  }

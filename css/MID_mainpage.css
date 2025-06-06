@@ -1,0 +1,16 @@
+.mid_mainpage_main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  @media (min-width: 768px) { /* Para escritorio */
+    .mid_mainpage_main {
+      margin-top: 5rem;
+  
+    }
+  
+  }

@@ -1,0 +1,169 @@
+
+
+/* Layout en dos columnas */
+.pagos-layout {
+  display: flex;
+  gap: 20px;
+}
+
+/* Contenedor de info de transferencia */
+.pagos-info {
+  width: 30%;
+  padding: 20px;
+  background: #2a2e3f;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pagos-info h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 5px;
+}
+
+/* Contenedor de la tabla de pagos */
+.pagos-container {
+  width: 70%;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la tabla */
+.pagos-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+}
+
+.pagos-thead {
+  background: #2a2e3f;
+  color: #ffffff;
+}
+
+.pagos-th, .pagos-td {
+  padding: 12px;
+  text-align: left;
+}
+
+.pagos-th {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #444b63;
+}
+
+.pagos-tr:nth-child(even) {
+  background: #f8f9fc;
+}
+
+.pagos-tr:hover {
+  background: #e1e5f2;
+  transition: 0.3s;
+}
+
+.pagos-validado {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.pagos-no-validado {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .pagos-layout {
+      flex-direction: column;
+  }
+  
+  .pagos-info, .pagos-container {
+      width: 100%;
+  }
+}
+.container {
+
+  gap: 20px;
+
+}
+
+.pagos-sidebar {
+  width: 30%;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pagos-container {
+  width: 70%;
+}
+
+.pagos-tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pagos-th, .pagos-td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.pagos-th {
+  background: #303030;
+  color: white;
+}
+
+.pagos-tr:hover {
+  background: #f1f1f1;
+}
+
+
+.pagos-tabla-sin-bordes {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pagos-tabla-sin-bordes td {
+  padding: 8px 0;
+}
+
+.pagos-label {
+  font-weight: bold;
+  color: #333;
+  width: 40%;
+}
+
+.pagos-value {
+  color: #000000;
+  text-align: right;
+  width: 60%;
+}
+
+
+.pagos-vencido{
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.pagos-button{
+  background-color: #303198;
+  color: #f1f1f1;
+  font-weight: bold;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  margin: 0.2rem 0rem;
+}
+
+.pagos-ir-a-pagos{
+  background-color: #f1f1f1;
+  color: #303198;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}

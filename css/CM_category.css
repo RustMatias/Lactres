@@ -1,0 +1,37 @@
+
+  
+  .cm_categorypage-title,
+  .cm_categorypage-current {
+    color: white;
+  }
+  
+  .cm_categorypage-icon svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .cm_categorypage-link {
+    background-color: #fff;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+    border-radius: 0.5rem;
+    display: flex;
+  }
+  
+  .cm_categorypage-link:hover  {
+
+    color: black;
+    text-decoration: none;
+    background-color:#e7e7e7 ;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .cm_categorypage-link{
+
+    }
+  
+  }

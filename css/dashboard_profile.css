@@ -1,0 +1,71 @@
+
+.dashboard-profile-info-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-profile-info-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.dashboard-profile-info-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+.dashboard-profile-info-save-button{
+  background-color: rgb(187, 248, 150);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+  transition: 0.2s;
+}
+
+
+.dashboard-profile-info-save-button:hover{
+  background-color: rgb(174, 248, 128);
+
+
+}
+
+.user-info-use-links{
+
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  margin: 15px 10px 0;
+}
+
+.user-info-use-links a{
+  background-color: #313399;
+  color: white;
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.user-info-use-links a svg{
+    margin-right: 0.5rem;
+
+  }

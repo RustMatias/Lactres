@@ -1,0 +1,197 @@
+
+
+.headerpage{
+    align-items: center;
+}
+
+.header-class{
+    background-color: #303198;
+    font-size: 12px !important;
+}
+
+.headerpage li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px !important;
+        margin-left: 1rem;
+        margin-right: 1rem;
+}
+
+
+.hover-header:hover{
+    
+    font-weight: bold;
+}
+
+.carrito{
+    stroke: #d5d5d5;
+}
+
+.carrito :hover svg{
+    stroke: #ffffff;
+}
+
+.headerpage img{
+   height: 2rem;
+}
+
+.logopng-header{
+    height: 2.5rem;
+}
+
+.search-container {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.search-input {
+    padding: 7px 10px 7px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    width: 300px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    color: #b7b7b7;
+    font-size: 18px;
+}
+
+.search-input:focus + .search-icon, .search-input:not(:placeholder-shown) + .search-icon {
+    color: #333;
+}
+
+.search-input:focus {
+    border: none;
+}
+
+.username-header{
+    color: red;
+    font-weight: bold;
+
+}
+.logout-header{
+    border-radius: 5px !important;
+   
+}
+
+.logout-header:hover {
+
+}
+
+
+
+/*DESPLEGABLE*/
+
+
+/* Estilo general del contenedor del dropdown */
+.header-user-info-nav-item.header-user-info-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón principal */
+.header-user-info-nav-item .header-user-info-dropdown-toggle {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.header-user-info-nav-item .header-user-info-dropdown-toggle:hover {
+    background-color: #e2e2e2;
+    color: #000;
+}
+
+/* Contenedor del menú desplegable */
+.header-user-info-nav-item .header-user-info-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    display: none;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+/* Items del menú */
+.header-user-info-nav-item .header-user-info-dropdown-menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-user-info-nav-item .header-user-info-dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-user-info-nav-item .header-user-info-dropdown-menu a:hover {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+/* Item específico para "Salir" */
+.header-user-info-nav-item .header-user-info-dropdown-menu a.header-user-info-logout {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.header-user-info-nav-item .header-user-info-dropdown-menu a.header-user-info-logout:hover {
+    background-color: #ffecec;
+    color: #c12e2a;
+}
+
+/* Mostrar menú al pasar el mouse */
+.header-user-info-nav-item:hover .header-user-info-dropdown-menu {
+    display: block;
+}
+
+/* Opcional: transición suave */
+.header-user-info-nav-item .header-user-info-dropdown-menu {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.header-user-info-nav-item:hover .header-user-info-dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cm-header-ml-auto{
+    margin-left: auto !important;
+}
+
+
+
+
+/* Esconder el buscador de escritorio en móvil */
+@media (max-width: 1023px) {
+
+    .cm-header-ml-auto{
+       margin: 0px !important;
+    }
+}

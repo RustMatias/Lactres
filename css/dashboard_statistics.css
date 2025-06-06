@@ -1,0 +1,42 @@
+.content {
+  display: flex;
+
+}
+
+
+.content-stats{
+  background: #f6f7fb;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.as-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos por fila en escritorio */
+  gap: 20px;
+
+}
+
+.as-section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.as-section canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+}
+
+/* En pantallas pequeñas, 1 por fila */
+@media (max-width: 768px) {
+  .as-grid {
+    grid-template-columns: 1fr;
+  }
+}

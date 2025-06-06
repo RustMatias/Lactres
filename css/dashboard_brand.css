@@ -1,0 +1,321 @@
+.content {
+  display: flex;
+
+}
+
+
+.content-stats{
+  background: #f6f7fb;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+
+.dashboard-brand-banner-container {
+  padding: 1rem;
+  border-radius: 15px;
+  background: rgb(214, 227, 248);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+}
+
+.dashboard-brand-banner-title {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.dashboard-brand-banner-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.dashboard-brand-banner-col {
+  flex: 1 1 300px;
+  max-width: 300px;
+}
+
+.dashboard-brand-banner-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-brand-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.dashboard-brand-banner-body {
+  padding: 1rem;
+}
+
+.dashboard-brand-banner-heading {
+  font-size: 1.1rem;
+  margin: 0 0 0.3rem;
+  color: #222;
+}
+
+.dashboard-brand-banner-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.dashboard-brand-banner-delete {
+  background: transparent;
+  color: #d00;
+  border: 1px solid #d00;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.dashboard-brand-banner-delete:hover {
+  background: #fee;
+}
+
+/* Inputs y formulario */
+.dashboard-brand-banner-label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.dashboard-brand-banner-input {
+  display: block;
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.dashboard-brand-banner-add {
+  margin-top: 1rem;
+width: 100%;
+
+  
+  background-color: rgb(187, 248, 150);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+  transition: 0.2s;
+}
+
+.dashboard-brand-banner-add:hover {
+  background-color: #218838;
+}
+
+/* Modal */
+.dashboard-brand-banner-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dashboard-brand-banner-modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.dashboard-brand-banner-modal-message {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.dashboard-brand-banner-modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.dashboard-brand-banner-modal-cancel,
+.dashboard-brand-banner-modal-confirm {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.dashboard-brand-banner-modal-cancel {
+  background: #ccc;
+  color: #333;
+}
+
+.dashboard-brand-banner-modal-confirm {
+  background: #d33;
+  color: white;
+}
+
+
+
+
+
+
+
+/* LOGO */
+
+.logo-container {
+  padding: 1rem;
+  background-color: rgb(214, 227, 248);
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+}
+
+.logo-current-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.logo-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 4px;
+  background-color: #f9f9f9;
+}
+
+.logo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logo-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.logo-submit-button {
+  background-color: rgb(187, 248, 150);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+  transition: 0.2s;
+}
+
+.logo-submit-button:hover {
+  background-color: #155ab6;
+}
+
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+
+.dashboard-contact-form {
+
+  padding: 1rem;
+  background-color: rgb(214, 227, 248);
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+}
+
+.dashboard-contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dashboard-contact-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.dashboard-contact-description {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.dashboard-contact-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-contact-label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #222;
+}
+
+.dashboard-contact-input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.dashboard-contact-input:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.dashboard-contact-submit-button {
+  background-color: rgb(187, 248, 150);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+  transition: 0.2s;
+}
+
+.dashboard-contact-submit-button:hover {
+  background-color: #155ab6;
+}

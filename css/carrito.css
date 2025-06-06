@@ -1,0 +1,295 @@
+.carrito-container {
+
+    margin-top: 2rem;
+
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carrito-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.carrito-table, .carrito-th, .carrito-td {
+    border: 1px solid #ddd;
+}
+
+.carrito-th, .carrito-td {
+    padding: 12px;
+    text-align: left;
+}
+
+.carrito-th {
+    background-color: #f2f2f2;
+}
+
+.carrito-tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.carrito-tfoot-tr {
+    font-weight: bold;
+}
+
+.carrito-total-label {
+    text-align: right;
+}
+
+.carrito-total-value {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+.carrito-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carrito-button, .carrito-button-eliminar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.carrito-button:hover, .carrito-button-eliminar:hover {
+    background-color: #218838;
+}
+
+.carrito-button-eliminar {
+    background-color: #dc3545;
+}
+
+.carrito-button-eliminar:hover {
+    background-color: #c82333;
+}
+
+.carrito-empty {
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde sutil alrededor del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro */
+    margin: 20px; /* Espaciado externo */
+}
+
+.carrito-empty-message {
+    font-size: 18px; /* Tamaño de fuente del mensaje */
+    color: #333; /* Color del texto */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.carrito-empty-link {
+    font-size: 16px; /* Tamaño de fuente del enlace */
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+.carrito-empty-link:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el ratón */
+    color: #0056b3; /* Color más oscuro del enlace al pasar el ratón */
+}
+
+.carrito-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem; /* Equivalente a `p-2` en Bootstrap */
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+}
+
+
+.carrito-svg-container{
+    padding: 2rem;
+    width: fit-content;
+    border-radius: 50%;
+    background-color: #303198;
+    transform: translateY(-50px);
+}
+
+.carrito-transform{
+    transform: translateY(50px);
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales de la tabla */
+.carrito-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.carrito-table, .carrito-th, .carrito-td {
+    border: 1px solid #ddd;
+}
+
+.carrito-th, .carrito-td {
+    padding: 12px;
+    text-align: left;
+}
+
+.carrito-th {
+    background-color: #f2f2f2;
+}
+
+.carrito-tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.carrito-tfoot-tr {
+    font-weight: bold;
+}
+
+.carrito-total-label {
+    text-align: right;
+}
+
+.carrito-total-value {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+/* Estilos para el botón */
+.carrito-button, .carrito-button-eliminar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.carrito-button:hover, .carrito-button-eliminar:hover {
+    background-color: #218838;
+}
+
+.carrito-button-eliminar {
+    background-color: #dc3545;
+}
+
+.carrito-button-eliminar:hover {
+    background-color: #c82333;
+}
+
+/* 🔽 RESPONSIVE 🔽 */
+@media screen and (max-width: 768px) {
+    .carrito-table {
+        font-size: 14px;
+    }
+
+    .carrito-th, .carrito-td {
+        padding: 8px;
+    }
+
+    .carrito-button, .carrito-button-eliminar {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+/* 🔽 Para pantallas muy pequeñas (móviles) 🔽 */
+@media screen and (max-width: 480px) {
+    .carrito-table {
+        font-size: 12px;
+    }
+
+    .carrito-th, .carrito-td {
+        padding: 5px;
+    }
+
+    .carrito-button, .carrito-button-eliminar {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+
+    /* Convertir la tabla en un diseño más amigable */
+    .carrito-table thead {
+        display: none;
+    }
+
+    .carrito-table, .carrito-tbody, .carrito-tr, .carrito-td {
+        display: block;
+        width: 100%;
+    }
+
+    .carrito-tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .carrito-td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .carrito-td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    /* Ajustar imagen */
+    .carrito-td img {
+        max-width: 40px;
+        height: auto;
+    }
+}
+
+
+.sin-stock {
+    background-color: #f8d7da; /* Fondo rojo claro */
+}
+
+.sin-stock-warning {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-weight: bold;
+    text-align: center;
+}

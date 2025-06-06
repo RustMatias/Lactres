@@ -1,0 +1,136 @@
+
+
+.headerpage{
+    align-items: center;
+}
+
+.header-class{
+    background-color: #303198;
+}
+
+.headerpage li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px !important;
+        margin-left: 1rem;
+        margin-right: 1rem;
+}
+
+
+.hover-header:hover{
+    
+    font-weight: bold;
+}
+
+.carrito{
+    stroke: #8a847f;
+}
+
+.carrito :hover svg{
+    stroke: #333;
+}
+
+.headerpage img{
+   height: 2rem;
+}
+
+.logopng-header{
+    height: 2.5rem;
+}
+
+.search-container {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+.search-container-mobile {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+.search-input {
+    padding: 7px 10px 7px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    width: 300px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    color: #b7b7b7;
+    font-size: 18px;
+}
+
+.search-input:focus + .search-icon, .search-input:not(:placeholder-shown) + .search-icon {
+    color: #333;
+}
+
+.search-input:focus {
+    border: none;
+}
+
+.username-header{
+    color: red;
+    font-weight: bold;
+
+}
+.logout-header{
+    border-radius: 5px !important;
+   
+}
+
+.logout-header:hover {
+
+}
+
+.cm-header-ml-auto{
+    margin-left: auto !important;
+}
+
+
+.cm-header-search-mobile{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Esconder el buscador móvil en escritorio */
+@media (min-width: 1024px) {
+    .cm-header-search-mobile {
+        display: none;
+    }
+    .search-container {
+        display: flex;
+    }
+}
+
+/* Esconder el buscador de escritorio en móvil */
+@media (max-width: 1023px) {
+    .search-container {
+        display: none !important;
+    }
+    .cm-header-ml-auto{
+       margin: 0px !important;
+    }
+}
+
+  
+
+.cm-inicio-container-oflog{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    max-width: 250px; /* Ajusta según sea necesario */
+    right: 0 !important;
+    left: auto !important;
+}

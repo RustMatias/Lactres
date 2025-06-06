@@ -1,0 +1,224 @@
+.content {
+    display: flex;
+  
+  }
+  
+  
+  .content-stats{
+    background: #f6f7fb;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+  }
+
+
+  
+
+
+  .dashboard-inventory-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .dashboard-inventory-header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 248, 150);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    stroke: rgb(0, 0, 0);
+  }
+
+  .dashboard-inventory-header a svg{
+    margin-right: 0.5rem;
+  }
+
+
+
+
+
+
+  .categories-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .categories-table th,
+  .categories-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+  }
+  
+  .categories-table th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    color: #444;
+  }
+  
+
+  .categories-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .categories-table th,
+  .categories-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+  }
+  
+  .categories-table th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .category-img {
+    max-width: 60px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* ✅ RESPONSIVE */
+  @media screen and (max-width: 768px) {
+    .categories-table,
+    .categories-table thead,
+    .categories-table tbody,
+    .categories-table th,
+    .categories-table td,
+    .categories-table tr {
+      display: block;
+      width: 100%;
+    }
+  
+    .categories-table thead {
+      display: none;
+    }
+  
+    .categories-table tr {
+      margin-bottom: 1rem;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      background: #fff;
+    }
+  
+    .categories-table td {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: none;
+      font-size: 0.9rem;
+      position: relative;
+    }
+  
+    .categories-table td::before {
+      content: attr(data-label);
+      font-weight: 600;
+      color: #333;
+      flex-shrink: 0;
+      margin-right: 10px;
+    }
+  
+    .category-img {
+      max-width: 100px;
+    }
+  }
+  
+  
+  .category-img {
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .btn-editar,
+  .btn-eliminar {
+    background-color: #2980b9;
+    color: white;
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+
+  .modal-delete-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-delete-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .modal-delete-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn-confirm {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn-cancel {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn-confirm:hover {
+    background-color: #c9302c;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #5a6268;
+  }
+  

@@ -1,0 +1,76 @@
+/* General container */
+.as-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.as-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.as-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Grid layout */
+.as-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Sections */
+.as-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.as-section h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Category Information */
+.as-category {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.as-category p {
+    margin: 10px 0;
+}
+
+.as-category strong {
+    color: #FF9800;
+}
+
+/* Summary */
+.as-summary p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.as-summary strong {
+    color: #4CAF50;
+}
+
+/* Chart */
+canvas {
+    max-width: 100%;
+    height: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .as-grid {
+        grid-template-columns: 1fr;
+    }
+}

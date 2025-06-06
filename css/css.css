@@ -1,0 +1,596 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ebeded !important;
+    caret-color: transparent;
+
+}
+
+
+  
+  input, textarea {
+    caret-color: auto;
+  }
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-login *{
+    box-sizing: border-box;
+}
+
+
+@keyframes rotate {
+    0% {
+        background-position: 50% 0%; /* Arriba */
+    }
+    25% {
+        background-position: 100% 50%; /* Derecha */
+    }
+    50% {
+        background-position: 50% 100%; /* Abajo */
+    }
+    75% {
+        background-position: 0% 50%; /* Izquierda */
+    }
+    100% {
+        background-position: 50% 0%; /* Vuelve arriba */
+    }
+}
+
+.section-login {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 100vh;
+    padding: 0 24px;
+    background-image: url(../images/protruding-squares.png);
+    background-repeat: repeat; /* Repite la imagen como patrón */
+    background-size: 200px 200px; /* Ajusta el tamaño del patrón (modificá a gusto) */
+    background-position: center;
+    color: #000;
+}
+
+
+
+.login {
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    padding: 70px 30px 44px;
+   
+    background: #fefefe;
+    text-align: center;
+    border-radius: 0px;
+    height: 100%;
+
+}
+
+.informacion{
+    display: none;
+}
+
+/* Estilo del scrollbar */
+.login::-webkit-scrollbar {
+    width: 8px; /* Hace la barra más pequeña */
+}
+
+.login::-webkit-scrollbar-track {
+    background: #f3f3f3; /* Fondo del track */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.login::-webkit-scrollbar-thumb {
+    background: #303198; /* Color azul para el scrollbar */
+    border-radius: 10px; /* Esquinas redondeadas */
+    border: 2px solid #f3f3f3; /* Añade un borde alrededor */
+}
+
+/* Opcional: Hover para el scrollbar */
+.login::-webkit-scrollbar-thumb:hover {
+    background: #303198; /* Azul más oscuro al pasar el cursor */
+}
+
+
+
+
+.presentacion-registro > img {
+    width: 40px;
+  
+   
+  
+    margin-bottom: 20px;
+}
+
+
+.presentacion-registro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.presentacion-registro h1{
+    font-weight: bold;
+}
+.login > h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin:  0 0 30px;
+}
+
+.login > h3{
+    color: #303198;
+    margin: 0 0 6px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.login > small{
+   margin: 0px;
+}
+
+
+ .vendedor{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vendedor > label {
+    margin: 0px;
+  
+    padding: 0px;
+}
+
+
+.vendedor > input{
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+
+.form{
+    display: grid;
+    gap: 20px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.form > :is(input, button){
+    height: 40px;
+    width: 100%;
+    outline: none;
+    padding: 0;
+  
+    border-radius: 10px;
+}
+
+.form > input{
+    background-color: #eeeeee;
+    border: 0;
+    padding: 0;
+    padding-left: 0.5rem;
+}
+
+.form > button{
+
+    cursor: pointer;
+    height: 56px;
+    background-color: #303198;
+    color: #fefefe;
+    border: 0;
+    letter-spacing: 2px;
+
+}
+
+.buttoner > :nth-child(2) {
+
+    flex: 0 0 85%;
+    all: unset; 
+    padding: 0px 10px;
+    width: 100%;
+    cursor: pointer;
+    height: 3rem;
+    background-color: #303198;
+    color: #fefefe;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Transición suave al aplicar el scale */
+
+}
+
+.buttoner > :nth-child(3) {
+
+    flex: 0 0 85%;
+    all: unset; 
+    padding: 0px 10px;
+    width: 100%;
+    cursor: pointer;
+    height: 3rem;
+    background-color: #303198;
+    color: #fefefe;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Transición suave al aplicar el scale */
+
+}
+.buttoner > :first-child {
+    height: 3rem;
+    flex: 0 0 15%; /* El primer hijo ocupa aproximadamente el 30% del contenedor */
+}
+.buttoner {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem; /* Separación de 0.5rem entre los elementos */
+
+    
+}
+.buttoner > * {
+    transition: transform 0.3s ease; /* Transición suave al aplicar el scale */
+
+}
+.buttoner > *:hover {
+    transform: scale(1.02); /* Escala al 100.2% (aumento del 0.2%) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logout{
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 4px;
+    color: #3e3e3e;
+    padding: 0.2rem 0.4rem;
+    font-size: 16px;
+    margin-left: 0.5rem;
+}
+
+
+.container2 {
+    margin-top: 1rem;
+    display: flex;
+}
+
+
+.content2 {
+    flex-grow: 1;
+    padding: 0px 20px;
+
+    box-sizing: border-box;
+}
+
+
+.content2 h2 {
+    font-size: 22px;
+    color: #545454;
+    margin: 0;
+}
+
+
+
+.header-product{
+    margin:  0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-product a{
+   
+}
+.header-product a:hover{
+   
+}
+.header-product hr{
+    width: 70%;
+}
+
+
+
+
+
+
+.padder{
+    width: 100%;
+    padding-right: 4rem !important;
+    padding-left: 4rem !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .container2 {
+        flex-direction: column; /* Cambia la dirección de la columna en pantallas pequeñas */
+    }
+
+    .menu2 {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        box-sizing: border-box;
+        margin-bottom: 10px; /* Agrega espacio entre el menú y el contenido en pantallas pequeñas */
+    }
+
+
+}
+
+
+
+
+  @media (width >= 500px){
+    .section-login{
+        padding: 0;
+    }
+
+    .login{
+        width: 70%;
+        border-radius: 1.25rem;
+        height: 70%;
+    }
+}
+
+@media (width >= 680px){
+    .login{
+        top: 0;
+        right: 0;
+        left: auto;
+        translate: 0 0;
+        margin: 0px;
+        height: 100%;
+        width: 40%;
+        border-radius: 0;
+        padding-top: 24px;
+    }
+
+
+    .informacion{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+
+        left: 0
+    }
+}
+
+
+
+
+
+
+.hr-horizontal{
+    width: 100%;
+   
+}
+
+
+.returnbutton-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    height: 36px;
+    background-color: #303198;
+    color: #fefefe;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.returnbutton-login:hover{
+    text-decoration: none;
+    color: #fefefe;
+
+}
+
+
+
+.more-productos-button{
+    margin: 1rem;
+    padding: 0.3rem;
+    min-width: calc(100% - 2rem);
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+
+}
+
+
+
+.more-productos-button:hover{
+   background-color: #bababa;
+    
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    
+      
+      
+}
+
+
+
+
+.informacion svg {
+    position: relative;
+    z-index: 2;
+    animation: cart-move 20s infinite ease-in-out, cart-turbulence 1s infinite;
+}
+
+#street {
+    border-radius: 1rem;
+    bottom: 0;
+    width: 100px;
+    height: 15px;
+    background-color: #ededed;   
+     animation: move-street 1.5s linear infinite;
+}
+
+
+
+/* Movimiento continuo de la calle hacia la derecha */
+@keyframes move-street {
+    0% {
+        transform: translateX(150%)scale(0.01);
+
+    }
+    50%{
+        transform: scale(1);
+    }
+    100% {
+        transform: translateX(-150%)scale(0.01);
+    
+    }
+}
+
+/* Movimiento del carrito hacia adelante con ligera oscilación */
+@keyframes cart-move {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+}
+
+/* Turbulencia irregular para el carrito */
+@keyframes cart-turbulence {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    50% {
+        transform: translateX(1px) rotate(1deg);
+    }
+    75% {
+        transform: translateX(-1px) rotate(-0.5deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+
+
+
+.emprendedores-main-container-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.emprendedores-main-container-banner h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) { 
+    .emprendedores-main-container-banner h3 {
+        font-size: 1rem; /* Ajusta el tamaño según lo que necesites */
+    }
+}
+
+
+
+
+
+
+
+
+/* Contenedor principal del dropdown */
+
+
+.ap-dropdown-toggle:hover {
+
+}
+
+/* Lista del dropdown */
+.ap-dropdown-menu {
+    white-space: nowrap;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 180px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.ap-hidden {
+    display: none;
+}
+
+/* Elementos del dropdown */
+.ap-dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.ap-dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Iconos */
+.ap-dropdown-icon {
+    margin-left: auto;
+    color: #666;
+}
+
+/* Texto dentro de los elementos */
+.ap-dropdown-text {
+    font-size: 14px;
+}
+
+/* Estilo de botón peligro (salir) */
+.ap-text-danger {
+    color: #dc3545;
+}
+
+.ap-text-danger:hover {
+}

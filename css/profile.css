@@ -1,0 +1,652 @@
+
+
+
+.profile-info-col{
+    width: 70%;
+    margin-right: 0.5rem;
+}
+
+.profile-shop-col {
+    width: 30%;
+    margin-left: 0.5rem;
+
+}
+
+
+.profile-basic-info{
+    padding-top: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    
+}
+
+.profile-shop-info{
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-create-shop-button {
+    color: #fefefe;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 100%; /* Ocupa el 80% del contenedor padre */
+    background-color: #303198;
+    height: 4rem;
+    text-decoration: none; /* Elimina el subrayado */
+    transition: none; /* Desactiva cualquier animación o transición */
+}
+
+.profile-create-shop-button:hover {
+    background-color: #303198; /* Puedes mantener el color de fondo igual en el hover si no deseas que cambie */
+    text-decoration: none; /* Asegura que no haya subrayado en hover */
+    color: #fefefe;
+}
+
+
+.profile-created-shop-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.profile-created-shop-info hr{
+    width: 100%;
+    color: #999999;
+}
+
+
+.profile-created-shop-info button{
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    color: #fefefe;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.5rem;
+    background-color: #5052a4;
+    border:  none;
+
+}
+
+.profile-created-shop-info button:hover{
+    background-color: #5354b5;
+ 
+}
+
+
+.profile-created-shop-info button > svg{
+    margin-left: 0.5rem;
+  
+
+}
+
+
+.profile-created-shop-info button > a{
+
+    color: #fefefe;
+
+
+}
+
+.profile-created-shop-info button > a:hover{
+
+    color: #fefefe;
+    text-decoration: none;
+
+}
+
+
+
+.profile-control-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.profile-control-info input{
+    width: 90%;
+   background-color: gainsboro;
+   border: none;
+   border-radius: 0.5rem;
+   padding: 0.2rem;
+   margin-bottom: 1rem;
+}
+
+.profile-control-info-b input{
+    width: 100%;
+   background-color: gainsboro;
+   border: none;
+   border-radius: 0.5rem;
+   padding: 0.2rem;
+   margin-bottom: 1rem;
+} 
+
+.profile-acount-fhalf{
+   
+    width: 65%;
+    border-right: 1px solid rgb(220, 220, 220);
+}
+
+
+.profile-acount-shalf{
+    padding: 0.5rem;
+    width:35%;
+    text-align: center;
+}
+
+.profile-btn-link-gestion{
+    color: #Fefefe;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    background-color: #303198;
+
+}
+
+.profile-btn-link-gestion img{
+    width: 90px;
+}
+
+.profile-account-header img{
+    width: 90px;
+    background-color: #303198;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+}
+
+.profile-account-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.profile-account-username {
+    display: block;
+    font-weight: bold;
+    color: #444;
+    margin-top: 5px;
+}
+
+.profile-personal-info-save-button{
+    color: #fefefe;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%; /* Ocupa el 80% del contenedor padre */
+    background-color: #303198;
+    height: 4rem;
+    text-decoration: none; /* Elimina el subrayado */
+    transition: 0.2s; /* Desactiva cualquier animación o transición */
+}
+
+.profile-personal-info-save-button:hover {
+    background-color: #303198; /* Puedes mantener el color de fondo igual en el hover si no deseas que cambie */
+    text-decoration: none; /* Asegura que no haya subrayado en hover */
+    color: #fefefe;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile-modal-info-form {
+    padding: 20px;
+}
+
+.profile-modal-info-templates {
+    padding: 20px;
+}
+
+.profile-modal-info-card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.profile-modal-info-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 10px;
+}
+
+
+.profile-tienda-button-link{
+
+    color: #Fefefe;
+    border-top-left-radius: 0 !important;
+    margin-top: 0px !important;
+
+
+}
+.profile-tienda-button-link a{
+    padding: 1rem;
+    color: #Fefefe;
+    text-decoration: none;
+}
+
+
+.profile-tienda-button-link:hover{
+    text-decoration: none;
+}
+
+
+
+
+.profile-toggle {
+    margin:0.5rem  0px ;
+    border-radius: 0.3rem;
+    position: relative;
+    width: 50%;
+    height: 40px;
+}
+
+
+
+
+
+
+.profile-toggle-input {
+    display: none;
+}
+
+.profile-toggle-label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    overflow: hidden;
+}
+
+.profile-toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.profile-toggle-text {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.profile-toggle-white {
+    color: black;
+}
+
+.profile-toggle-black {
+    color: white;
+}
+
+.profile-toggle-input:checked + .profile-toggle-label::before {
+    transform: translateX(100%);
+    background: black;
+}
+
+.profile-toggle-input:checked + .profile-toggle-label .profile-toggle-white {
+    color: white;
+}
+
+.profile-toggle-input:checked + .profile-toggle-label .profile-toggle-black {
+    color: white;
+}
+
+
+
+
+
+.profile-input-ubicacion{
+    width: 90%;
+   background-color: gainsboro;
+   border: none;
+   border-radius: 0.5rem;
+   padding: 0.2rem;
+  
+}
+
+
+
+.profile-toffle-input {
+    display: none;
+}
+
+.profile-toffle-label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    overflow: hidden;
+}
+
+.profile-toffle-label::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #303198;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.profile-toffle-text {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.profile-toffle-si {
+    color: white;
+}
+
+.profile-toffle-no {
+    color: white;
+}
+
+.profile-toffle-input:checked + .profile-toffle-label::before {
+    transform: translateX(100%);
+    background: #303198;
+}
+
+.profile-toffle-input:checked + .profile-toffle-label .profile-toffle-si {
+    color: white;
+}
+
+.profile-toffle-input:checked + .profile-toffle-label .profile-toffle-no {
+    color: white;
+}
+
+
+
+
+
+.profile-colorpicker-input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.profile-colorpicker-input::-webkit-color-swatch {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+}
+
+.profile-colorpicker-input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+
+
+.profile-vencimiento{
+    background-color: #303198;
+    color: #Fefefe;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-vencimiento a{
+    background-color: #Fefefe;
+    color: #303198;
+    font-weight: bold;
+    border-radius: 0.15rem;
+    padding: 0.3rem;
+}
+.profile-vencimiento a:hover{
+    text-decoration: none;
+    color: #303198;
+    background-color: #e9e9e9;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .profile-info-col, .profile-acount-fhalf, .profile-btn-link-gestion, .profile-acount-shalf, .profile-shop-info, .profile-shop-col{
+
+        width: 100%;
+
+    }
+  .profile-shop-col{
+    margin: 0px;
+    margin-top: 1rem;
+  }
+  .profile-created-shop-info{
+
+    align-items: center;
+
+   
+    }
+
+    
+    .profile-shop-view-tab {
+        margin-right: auto;
+    }
+
+}
+
+.profile-acount-fhalf{
+    padding: 0.5rem;
+
+    border-right: none;
+}
+ 
+
+
+  
+  @media (min-width: 1024px) {
+    .profile-tienda-button-link{
+        background-color: #444;
+    }
+    
+  }
+  
+
+
+
+    .profile-shop-config-toggle-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .profile-shop-config-toggle-label {
+        font-weight: bold;
+    }
+
+    .profile-shop-config-toggle-wrapper {
+        position: relative;
+        width: 50px;
+        height: 25px;
+    }
+
+    .profile-shop-config-toggle-input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .profile-shop-config-toggle-slider {
+   
+        position: absolute;
+        cursor: pointer;
+        height: 2rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        border-radius: 25px;
+        transition: .3s;
+    }
+
+    .profile-shop-config-toggle-slider:before {
+        content: "No";
+        position: absolute;
+        width: 1.75rem;
+        height: 1.75rem;
+        left: 3px;
+        bottom: 2px;
+        background-color: white;
+        border-radius: 50%;
+        transition: .3s;
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        color: black;
+    }
+
+    .profile-shop-config-toggle-input:checked + .profile-shop-config-toggle-slider {
+        background-color: #28a745;
+    }
+
+    .profile-shop-config-toggle-input:checked + .profile-shop-config-toggle-slider:before {
+        transform: translateX(0.87rem);
+        content: "Sí";
+        color: black;
+    }
+
+
+
+    .profile-shop-view-tab {
+        display: flex;
+        align-items: center;
+        background-color: #444584;
+        border-radius: 8px 8px 0 0;
+        padding: 5px 12px;
+        width: 200px;
+        height: 30px;
+        color: white;
+        font-family: Arial, sans-serif;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .profile-shop-view-tab-icon img {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+    
+    .profile-shop-view-tab-title {
+        flex-grow: 1;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
+    .profile-shop-view-tab-close {
+        font-size: 14px;
+        cursor: pointer;
+        padding: 2px;
+        opacity: 0.7;
+    }
+    
+    .profile-shop-view-tab-close:hover {
+        opacity: 1;
+    }
+    .profile-conf-card{
+        background-color: rgb(214, 227, 248);
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        
+    }
+    .profile-conf-card button{
+        border: none;
+        border-radius: 0.2rem;
+        background-color: #5354b5;
+        color: #ccc;
+        
+    }
+
+    
+.profile-conf-time-range {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-conf-time-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-conf-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profile-conf-checkbox input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #007bff;
+    cursor: pointer;
+}

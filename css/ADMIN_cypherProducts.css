@@ -1,0 +1,66 @@
+/* Contenedor principal de la tabla */
+.cypher-container {
+    padding: 20px;
+}
+
+/* Tabla con bordes y mejor diseño */
+.cypher-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+/* Estilos generales para celdas y encabezados */
+.cypher-table th, .cypher-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Encabezados con fondo azul */
+.cypher-table thead {
+    background-color: #303198;
+    color: white;
+}
+
+/* Alternar colores en las filas */
+.cypher-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para los inputs dentro de la tabla */
+.cypher-input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Ajustar columnas específicas */
+.cypher-cantidad {
+    width: 80px;
+    text-align: center;
+}
+
+.cypher-valor {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+
+.cypher-header-options{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.cypher-header-options button{
+   background-color: #303198;
+   border-radius: 0.3rem;
+    color: #f2f2f2;
+    border: none;
+    padding: 0.5rem;
+}

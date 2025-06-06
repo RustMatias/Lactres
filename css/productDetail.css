@@ -1,0 +1,435 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+/* Estilos específicos de la página de producto */
+.product-page {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.product-images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-image img {
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail-images img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.product-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-rating span {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.product-price {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.product-price del {
+    color: #888;
+}
+
+.discounted-price {
+    color: #e60000;
+}
+
+.purchase-options p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.stock-info span {
+    display: block;
+    margin: 5px 0;
+}
+
+.add-to-cart {
+    margin-top: 20px;
+}
+
+.add-to-cart select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.add-to-cart button {
+    background-color: #3483fa;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart button:hover {
+    background-color: #2968c8;
+}
+
+/* Estilos para productos relacionados */
+.related-products {
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 1200px;
+
+}
+
+
+
+.back-related-productos{
+    padding: 0rem 1rem;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0px;
+    background-color: #ffe500;
+    z-index: 9;
+}
+
+.related-products h2 {
+    z-index: 100;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.related-products-container {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    z-index: 10;
+}
+
+.related-product {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Añadido para suavizar la transición */
+}
+
+.related-product:hover {
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Aumenta la sombra para el efecto de elevación */
+    transform: translateY(-5px); /* Mueve el elemento hacia arriba para acentuar el efecto de elevación */
+}
+
+
+.related-product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+
+.related-products-info{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.related-products-info p, small, span{
+    width: fit-content;
+    align-content: start;
+    margin: 5px 0;
+}
+
+.related-products-info p{
+    color: black;
+}
+
+.related-products-info  small{
+    width: fit-content;
+    align-content: start;
+   margin-top: 0px;
+   color: gray;
+}
+
+/* Estilos para la descripción del producto */
+.product-description {
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-description h2 {
+    margin-bottom: 10px;
+}
+
+.product-description p {
+    line-height: 1.6;
+}
+
+/* Estilos para las características del producto */
+.product-specs {
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-specs h2 {
+    margin-bottom: 10px;
+}
+
+.product-specs ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-specs ul li {
+    margin-bottom: 5px;
+}
+
+
+.edit-button-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right:  1rem;
+    bottom: 1rem;
+    background-color: orange;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    color: #fefefe;
+    fill: #fefefe ;
+    border-radius: 5px;
+}
+.edit-button-detail:hover{
+    color: #fefefe;
+    fill: #fefefe ;
+    text-decoration: none;
+    background-color: rgb(216, 141, 2);
+}
+
+
+.product-comments{
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.new-comment-pd{
+    font-size: 14px;
+    background-color: #ffe500;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    border: none;
+}
+
+.new-comment-pd:hover{
+    font-size: 14px;
+    background-color: #e7d003;
+
+}
+
+.product-comments ul {
+  
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.product-comments li {
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem;
+}
+
+.product-comments small {
+    color: grey;
+}
+
+
+
+.pd-comments-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.pd-comments-header h2{
+   margin: 0px;
+}
+
+
+.star-filled{
+    color: #f4ef01;
+}
+.star-nofilled{
+    color: #a4a4a4;
+}
+
+
+
+/* Estilo para el formulario de nuevo comentario */
+.pd-new-comment {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.pd-new-comment select,
+.pd-new-comment textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.pd-new-comment textarea {
+    height: 100px;
+    resize: none;
+}
+
+.pd-new-comment button {
+    padding: 0.75rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.pd-new-comment button:hover {
+    background-color: #555;
+}
+/* Estilo para las estrellas de valoración */
+.pd-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+
+.pd-rating input[type="radio"] {
+    display: none;
+}
+
+.pd-rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.pd-rating input[type="radio"]:checked ~ label {
+    color: #f5b301;
+}
+
+.pd-rating label:hover,
+.pd-rating label:hover ~ label {
+    color: #f5b301;
+}
+
+
+
+
+
+/* Etiqueta de cantidad */
+.custom-quantity-label {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* Campo de cantidad */
+.custom-quantity-input {
+    width: 4rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+/* Botón de añadir al carrito */
+.custom-add-to-cart-btn {
+    background-color: #007bff; /* Azul para el botón activo */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.custom-add-to-cart-btn:hover {
+    background-color: #0056b3; /* Azul más oscuro en hover */
+}
+
+/* Botón de fuera de stock */
+.custom-out-of-stock-btn {
+    background-color: #6c757d; /* Gris para el botón deshabilitado */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: not-allowed;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.custom-out-of-stock-btn:disabled {
+    opacity: 0.65; /* Menos opacidad para el estado deshabilitado */
+}
